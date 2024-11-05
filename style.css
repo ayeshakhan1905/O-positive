@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: primary;
+    src: url(assets/PPNeueMontreal-Bold.woff);
+}
+
+@font-face {
+    font-family: heading;
+    src: url(assets/Thunder-BlackLC.woff);
+}
+
+@font-face {
+    font-family: text;
+    src: url(assets/Thunder-BoldLC.woff);
+}
+.loading{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.loader h2{
+    text-transform: uppercase;
+    font-family: primary;
+    font-size: 6vh;
+    letter-spacing: 0.2vh;
+}
+
+.loader h2 span{
+    display: inline-block;
+}
+
+.loader .loading-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5vh;
+    position: absolute;
+    bottom: 22vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 12vw;
+}
+
+.loader .circle{
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.loader h4{
+    font-family: primary;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.7vh;
+    color: gray;
+}
+
+.enter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #131212;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: -200vw;
+    top: 0;
+    /* position: relative; */
+    /* display: none; */
+}
+
+.enter .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 3s;
+}
+
+.enter .row img{
+    width: 22vw;
+    height: 28vh;
+    object-fit: cover;
+    margin: 2.3vh;
+    border-radius: 1vh;
+}
+
+.enter .button{
+    position: absolute;
+    color: #fff;
+    font-size: 24vh;
+    text-transform: uppercase;
+    bottom: 0vh;
+    display: flex;
+    justify-content: space-between;
+    height: 45vh;
+    width: 100%;
+    padding: 5vh;
+    /* background-color: red; */
+    font-family: heading;
+    overflow: hidden;
+}
+
+.enter .button .circle{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    background-color: #F93434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter .button .arrow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5vh;
+    width: 2.5vw;
+    /* background-color: blue; */
+    font-size: 5vh;
+    overflow: hidden;
+}
+
+.enter .button #b{
+    color: #F93434;
+}
+
+.enter .text span{
+    display: inline-block;
+}
+
+.page1{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #131212;
+    position: relative;
+    overflow: hidden;
+}
+
+.page1 h1{
+    position: absolute;
+    bottom: -7vh;
+    left: 5vw;
+    color: #F93434;
+    font-size: 57vh;
+    font-family: heading;
+    text-transform: uppercase;
+    z-index: -1;
+}
+
+.page1 img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    display: none;
+}
+
+.page1 .container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-top: 4vh;
+}
+
+.page1 .text{
+    height: 5.8vh;
+    padding-top: 1vh;
+    width: 34vw;
+    overflow: hidden;
+}
+
+.page1 h3{
+    font-family: text;
+    font-size: 6.5vh;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.2vh;
+}
+
+.page1 .first{
+    color: #fff;
+}
+
+.page1 .second{
+    color: #F93434;
+    margin-top: 2vh;
+}
+
+.page1 span{
+    display: inline-block;
+}
